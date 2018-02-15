@@ -1,11 +1,27 @@
+const FAKE_STREAM = [
+  {
+    title: 'Someone Great'
+  },
+  {
+    title: 'Let It Go'
+  },
+  {
+    title: 'Royals'
+  },
+  {
+    title: 'Aint it so'
+  },
+  {
+    title: 'Get Lucky!!!'
+  }
+]
+
 export default () => (
   <div>
     <ul>
-      <li>Someone Great</li>
-      <li>Let It Go</li>
-      <li>Royals</li>
-      <li>Aint it so</li>
-      <li>Get Lucky</li>
+      { FAKE_STREAM.map(item => (
+        <li>{ item.title }</li>
+      ))}
     </ul>
 
     <style jsx>{`
